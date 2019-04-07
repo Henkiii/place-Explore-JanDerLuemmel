@@ -1,0 +1,46 @@
+.animation {
+	background-color: white; 
+	transition: background 0.5s; 
+	border-radius: 25px; 
+	box-shadow: 0 9px 30px #999;
+	font-size: 18px;
+	animation: fadein 0.3s ease-out normal backwards;
+}
+.animation:hover {background: white;} 										/* Hintergrundfarbe beim Hover */
+.animation:active {transform: translateY(4px); box-shadow: 0 5px 10px #666;}
+.animation a{color: black;}
+
+.red 				{animation-delay: 0;}
+.green 				{animation-delay: 50ms;}
+.blue 				{animation-delay: 100ms;}
+.white 				{animation-delay: 150ms;}
+
+.orange 			{animation-delay: 50ms;}
+.light-orange 		{animation-delay: 100ms;}
+.yellow 			{animation-delay: 150ms;}
+
+.lightgreen			{animation-delay: 100ms;}
+.tuerkis			{animation-delay: 150ms;}
+.lightblue			{animation-delay: 200ms;}
+
+.smooth-blue		{animation-delay: 150ms;}
+.lila				{animation-delay: 200ms;}
+.pink				{animation-delay: 250ms;}
+
+.rosa 				{animation-delay: 200ms;}
+.very-light-blue 	{animation-delay: 250ms;}
+.white-blue 		{animation-delay: 300ms;}
+
+.fade1				{animation-delay: 0ms;}
+.fade2				{animation-delay: 100ms;}
+.fade3				{animation-delay: 200ms;}
+.fade4				{animation-delay: 300ms;}
+
+
+
+@keyframes fadein {
+    0% {transform: scale(0);}
+    70% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+    
+}

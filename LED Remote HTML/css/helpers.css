@@ -1,0 +1,158 @@
+
+/* ###################################### */
+/* ############ Allgemein ############### */
+/* ###################################### */
+
+@font-face{
+
+	font-family: "ueberschrift";
+	src: url(Calibri.ttf);
+
+}
+
+.col {
+	
+	width: 300px;
+	position: relative;
+	/*top: 130px;
+    left: 52px;*/
+	border-radius: 25px;
+	box-shadow: 5px 5px 50px;
+	background-color: #EEEEEE;				/* Hintergrund Transparent? */
+	padding: 10px 0 85px 0;
+	margin: 100px auto;
+}
+
+@media (max-width: 320px) {
+	.col {
+		margin: 0 auto;
+	    height: 92%;
+	}
+
+	body {
+		height: 90%;
+	}
+}
+
+.buttons{
+
+	margin: inherit;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	transition: width 0.5s;
+	width: 55%;
+	transition: background 0.2s;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	border-color: grey;
+	height: 55px;
+	outline: none;	
+
+}
+
+div{
+	font-family: "Arial";
+	font-size: 28px;
+	vertical-align: middle;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	line-height: 1.9;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+/* ###################################### */
+/* ############ Ausschalter ############# */
+/* ###################################### */
+
+.off { 
+background-image: url(../images/off.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 60px;
+border: 0px;
+cursor: pointer;
+outline: 0;
+position:absolute;
+top: 0;
+left: 220px; 
+background-color: transparent; 
+border-color: transparent;
+margin: 10px;
+padding: 0px;
+border-radius: 50px;
+transition: box-shadow 0s, background-image 0.1s;
+}
+.off:hover{
+  background-color: transparent;
+  background-image: url(../images/off_hover.png);
+}
+
+.off:active{
+  transform: 0s;
+  background-image: url(../images/off_active.png);
+  box-shadow: 0 5px 10px #666 inset;
+  transform: translateY(4px);
+}
+
+/* ###################################### */
+/* ############ Backlink ################ */
+/* ###################################### */
+
+.backlink { 
+background-image: url(../images/pfeil.png);
+background-repeat: no-repeat;
+width: 60px;
+height: 60px;
+border-radius: 50px;
+cursor: pointer;
+outline: 0;
+position:absolute;
+top: -10px;
+left: -8px;
+margin: 10px;
+border: none;
+padding: 0px;
+transition: box-shadow 0s, background-image 0.3s, transform 0.2s;
+}
+.backlink:hover{
+  background-image: url(../images/pfeil_hover.png);
+  transform: rotate(360deg);
+}
+
+.backlink:active{
+  transform: 0s;
+  background-image: url(../images/pfeil_active.png);
+  box-shadow: 0 5px 10px #666 inset;
+  transform: translateY(4px);
+}
+
+/* ###################################### */
+/* ############ Main Menu ############### */
+/* ###################################### */
+
+a#mainmenubutton.buttons.main {
+	background-image: url(../images/main.png);
+	padding: 0 0 0 0;
+	font-size: 20px;
+	position: relative;
+	top: 464px;
+	transition: background 0.2s;  
+	border-radius: 50px; 
+	/*box-shadow: 0 9px 30px #999; */
+	height: 0;
+	width: 60px;
+	height: 60px;
+	color: black;
+	border: 2px solid;
+	border-color: #F3E3C8;
+}
+a#mainmenubutton.buttons.main:hover {background-image: url(../images/main_hover.png);} 										/* Hintergrundfarbe beim Hover */
+a#mainmenubutton.buttons.main:active {transform: translateY(4px); box-shadow: 0 5px 10px #666 inset;}
+a#mainmenubutton.buttons.main a{color: black}
